@@ -7,17 +7,15 @@ public class Main
 	public static void main(String[] args) throws IOException
 	{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
+
 		Stack<Integer>stack = new Stack<>();	
-		
+
 		int n = Integer.parseInt(br.readLine());
-		
-		Scanner scn = new Scanner(System.in);
-		
+
 		for(int i=1 ; i<=n ; i++)
 		{
 			String s = br.readLine();
-			
+
 			if(s.contains("push"))
 			{
 				String [] p = s.split(" ");
@@ -51,7 +49,8 @@ public class Main
 				else
 					System.out.println(stack.peek());
 			}
-			
+
 		}	
 	}
 }
+
